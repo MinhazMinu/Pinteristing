@@ -25,16 +25,19 @@ before_action :correct_user, only: [:edit, :update, :destroy]
   def create
     @pin = current_user.pins.build(pin_params)
     @pin.save
+    flash[:notice] = "Pin successfully created"
     respond_with(@pin)
   end
 
   def update
     @pin.update(pin_params)
+    flash[:notice] = "Pin successfully updated"
     respond_with(@pin)
   end
 
   def destroy
     @pin.destroy
+    flash[:notice] = "Pin successfully destroyed"
     respond_with(@pin)
   end
 
@@ -51,6 +54,6 @@ end
 
 
     def pin_params
-      params.require(:pin).permit(:description)
+      params.require(:pin).permit(:description, :image)
     end
 end
