@@ -24,6 +24,8 @@ gem 'jbuilder', '~> 2.0'
 
 gem 'paperclip', '~> 4.2' # paperdlip gem
 
+gem 'aws-sdk', '~> 2.0.46 '
+
 gem 'devise', '~> 3.4.1'
 
 gem 'sdoc', '~> 0.4.0',    
