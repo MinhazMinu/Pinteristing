@@ -1,5 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Lobster);
 
+@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url('/assets/glyphicons-halflings-regular.eot');
+    src: url('/assets/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('/assets/glyphicons-halflings-regular.woff') format('woff'), url('/assets/glyphicons-halflings-regular.ttf') format('truetype'), url('/assets/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}
+
 
 $body-bg:   #ecf0f1;
 $font-family-sans-serif:    'Lobster', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -9,8 +15,10 @@ $navbar-default-brand-color:      #c0392b;
 $brand-primary:                 #2980b9;
 $jumbotron-bg:        white;
 
-@import "bootstrap-sprockets";
+
 $icon-font-path: 'bootstrap/';
+@import "bootstrap-sprockets";
+
 @import 'bootstrap';
 
 .center {
